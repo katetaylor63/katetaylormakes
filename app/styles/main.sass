@@ -2,5 +2,62 @@
 @import colors
 @import typography
 @import layout
+@import reset
 
 // MISC VARIABLES
+$indicator-border: .4em solid $gold
+
+$transition: .3s ease-in-out
+
+html
+  background-color: $neutral
+
+body
+
+  // height: 100vh
+  // width: 100%
+
+.outer-flex-container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.sidebar
+  background: $neutral
+  width: 23em
+  position: fixed
+  height: 100vh
+  img
+    @extend .m-all-md
+    margin-top: 16em
+    margin-bottom: 3em
+  ul
+    list-style-type: none
+  li
+    @extend .nav-text
+    @extend .p-all-md
+    cursor: pointer
+    transition: $transition
+    &:hover, &active, &:focus
+      border-left: $indicator-border
+  a
+    text-decoration: none
+
+.body
+  background: $neutral
+  flex-grow: 1
+  // width: 100%
+  // @extend .p-all-lg
+.body-container
+  flex-grow: 3
+
+.cover-image
+    background: url(/img/carousel/pic5.jpg) no-repeat center center fixed
+    background-size: cover
+    height: 100vh
+
+.work-section-home
+  background: $blue
+  height: 10em
+  h1
+    color: white
