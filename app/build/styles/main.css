@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i");
+@media (max-width: 420px) {
+  html {
+    background: coral; } }
+
+@media (min-width: 420px) and (max-width: 768px) {
+  html {
+    background: honeydew; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    background: teal; } }
+
+@media (min-width: 1024px) and (max-width: 1800px) {
+  html {
+    background: green; } }
+
+@media (min-width: 1800px) and (max-width: 2560px) {
+  html {
+    background: aqua; } }
+
 .nav-text, .sidebar li {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6em;
