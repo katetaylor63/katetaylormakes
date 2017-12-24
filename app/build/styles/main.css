@@ -19,7 +19,7 @@
   html {
     background: aqua; } }
 
-.nav-text, .sidebar li {
+.nav-text, .body-container .sidebar li {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6em;
   color: #595859;
@@ -32,12 +32,6 @@ p {
   color: #595859;
   font-family: "Montserrat", sans-serif;
   line-height: 1.8em; }
-
-.body-container {
-  display: flex; }
-  .body-container .sidebar {
-    width: 90em;
-    height: 100vh; }
 
 .p-all-xs {
   padding: 6px; }
@@ -85,7 +79,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px; }
 
-.p-all-md, .body-container .container, .sidebar li {
+.p-all-md, .body-container .sidebar li {
   padding: 18px; }
 
 .p-left-md {
@@ -108,7 +102,7 @@ p {
   padding-top: 18px;
   padding-bottom: 18px; }
 
-.p-all-lg {
+.p-all-lg, .body-container .container {
   padding: 24px; }
 
 .p-left-lg {
@@ -223,7 +217,7 @@ p {
   margin-top: 12px;
   margin-bottom: 12px; }
 
-.m-all-md, .sidebar .logo-container {
+.m-all-md, .body-container .sidebar .logo-container {
   margin: 18px; }
 
 .m-left-md {
@@ -355,18 +349,22 @@ table {
 html {
   background-color: #ede8e3; }
 
-.sidebar {
-  background: #ede8e3; }
-  .sidebar .logo-container {
-    margin-top: 16em;
-    margin-bottom: 3em;
-    width: 130%; }
-  .sidebar ul {
-    list-style-type: none; }
-  .sidebar li {
-    cursor: pointer;
-    transition: 0.3s ease-in-out; }
-    .sidebar li:hover, .sidebar liactive, .sidebar li:focus {
-      border-left: 0.4em solid #db8c1b; }
-  .sidebar a {
-    text-decoration: none; }
+.body-container {
+  display: flex; }
+  .body-container .sidebar {
+    min-width: 16em; }
+    .body-container .sidebar .logo-container {
+      margin-top: 16em;
+      margin-bottom: 3em;
+      width: 90%; }
+    .body-container .sidebar ul {
+      list-style-type: none; }
+    .body-container .sidebar li {
+      cursor: pointer;
+      transition: 0.3s ease-in-out; }
+      .body-container .sidebar li:hover, .body-container .sidebar liactive, .body-container .sidebar li:focus {
+        border-left: 4px solid #db8c1b; }
+    .body-container .sidebar a {
+      text-decoration: none; }
+  .body-container .container {
+    flex-grow: 1; }
