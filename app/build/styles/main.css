@@ -33,7 +33,7 @@ p {
   font-family: "Montserrat", sans-serif;
   line-height: 1.8em; }
 
-.p-all-xs {
+.p-all-xs, .work-section-home .project {
   padding: 6px; }
 
 .p-left-xs {
@@ -194,7 +194,7 @@ p {
   margin-top: 6px;
   margin-bottom: 6px; }
 
-.m-all-sm {
+.m-all-sm, .work-section-home .project {
   margin: 12px; }
 
 .m-left-sm {
@@ -368,3 +368,14 @@ html {
       text-decoration: none; }
   .body-container .container {
     flex-grow: 1; }
+
+.work-section-home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .work-section-home .project {
+    background: white;
+    display: flex;
+    flex-direction: column; }
+    .work-section-home .project img {
+      max-width: 25em; }
