@@ -82,6 +82,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/includes\/logo-svg.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/includes\/logo-svg.html",
+		"oF": 0
+		},
 	"\/index.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -128,6 +135,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/styles\/colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/helpers.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/helpers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/layout-variables.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/layout-variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
