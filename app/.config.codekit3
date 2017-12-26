@@ -85,7 +85,7 @@
 	"\/includes\/logo-svg.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/includes\/logo-svg.html",
 		"oF": 0
 		},
@@ -114,6 +114,15 @@
 		"ft": 512,
 		"oA": 0,
 		"oAP": "\/build\/logo-svg.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/main.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/build\/main.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -146,7 +155,7 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/styles\/helpers.css",
 		"oF": 0,
 		"oS": 0,
@@ -159,21 +168,8 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/styles\/layout-variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/styles\/layout.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/styles\/layout.css",
+		"oAP": "\/build\/styles\/layout-variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -198,7 +194,7 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/styles\/media-queries.css",
 		"oF": 0,
 		"oS": 0,
@@ -224,7 +220,7 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/styles\/typography.css",
 		"oF": 0,
 		"oS": 0,
@@ -240,7 +236,7 @@
 	"displayValue": "app",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-punDog",
-	"lastBuiltDate": 533095175
+	"lastBuiltDate": 535950240
 	},
 "projectSettings": {
 	"abortBuildOnError": 0,

@@ -5,32 +5,29 @@ html
     title Styling | Kate Taylor
     link(rel='stylesheet', href='/styles/main.css')
       
-  body.body-container
-    .sidebar
-      .fixed
-        .logo-container
-          include ./includes/logo-svg.html
+    body.main-container
+      .navigation
         ul
-          a(href='#work')
-            li work
-          a(href='#about')
-            li about me
-          a(href='#hello')
-            li say hello
-    .container
-      .cover-image
-      .work-section-home
-        .project
-          img(src="./img/carousel/pic2.jpg")
-          description goes here
-        .project
-          img(src="./img/carousel/pic2.jpg")
-          description goes here
-        .project
-          img(src="./img/carousel/pic2.jpg")
-          description goes here
-        .project
-          img(src="./img/carousel/pic2.jpg")
-          description goes here
+          a(href="main.html") 
+            li  Return to main site
+          
+          a(href="#reason")
+            li  Reason
+            
+          a(href="#colors")
+            li  Color variables
+          
+          a(href="#typography")
+            li  Typography Classes
+          
+          a(href="#layout-helpers")
+            li  Layout Helpers
+          
+          a(href="#page-structure")
+            li  Page Structure
+            
+            
+      .container
 
+      
     script(src='/js/interactive.js')
