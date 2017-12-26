@@ -15,11 +15,11 @@
     infiniteLoop: true,
     hideControlOnEnd: false,
     speed: 500,
-    easing: null,
+    easing: 'ease-in-out',
     slideMargin: 0,
-    startSlide: 0,
+    startSlide: 1,
     randomStart: false,
-    captions: false,
+    captions: true,
     ticker: false,
     tickerHover: false,
     adaptiveHeight: false,
@@ -43,7 +43,7 @@
     ariaHidden: true,
 
     // KEYBOARD
-    keyboardEnabled: false,
+    keyboardEnabled: true,
 
     // PAGER
     pager: true,
@@ -66,7 +66,7 @@
     autoControlsSelector: null,
 
     // AUTO
-    auto: false,
+    auto: true,
     pause: 4000,
     autoStart: true,
     autoDirection: 'next',

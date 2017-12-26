@@ -28,7 +28,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/bx_loader.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/carousel\/pic2.jpg": {
 		"ft": 16384,
@@ -77,7 +77,7 @@
 		"oAP": "\/build\/img\/controls.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -123,7 +123,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/js\/aslider-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -133,7 +133,7 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/js\/interactivity-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
@@ -143,8 +143,8 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/js\/jquery.bxslider-min.js",
-		"oF": 0,
-		"sC": 3,
+		"oF": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/js\/jquery.easing.1.3.js": {
@@ -153,18 +153,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/js\/jquery.easing.1.3-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/logo-svg.pug": {
+	"\/logo-svg.html": {
 		"cB": 0,
-		"cOD": 1,
-		"ft": 512,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/logo-svg.html",
-		"oF": 0,
-		"oS": 0
+		"oF": 0
 		},
 	"\/main.pug": {
 		"cB": 0,
@@ -210,15 +208,18 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/styles\/jquery.bxslider.css": {
-		"aP": 1,
+	"\/styles\/jquery.bxslider.sass": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/styles\/jquery.bxslider-min.css",
+		"oAP": "\/build\/styles\/jquery.bxslider.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0,
+		"uL": 1
 		},
 	"\/styles\/layout-variables.sass": {
 		"aP": 0,
@@ -240,7 +241,7 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/styles\/main.css",
 		"oF": 0,
 		"oS": 0,
@@ -295,7 +296,7 @@
 	"displayValue": "app",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-punDog",
-	"lastBuiltDate": 535950240
+	"lastBuiltDate": 536023304
 	},
 "projectSettings": {
 	"abortBuildOnError": 0,
@@ -812,7 +813,7 @@
 			"optionString": "'always', {'null': 'always'}"
 			},
 		"for-direction": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"func-call-spacing": {
@@ -840,7 +841,7 @@
 			"optionString": "{'before': true, 'after': false}"
 			},
 		"getter-return": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
@@ -960,7 +961,7 @@
 			"optionString": ""
 			},
 		"no-await-in-loop": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"no-bitwise": {
@@ -988,7 +989,7 @@
 			"optionString": ""
 			},
 		"no-compare-neg-zero": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -1096,7 +1097,7 @@
 			"optionString": ""
 			},
 		"no-extra-parens": {
-			"active": 0,
+			"active": 1,
 			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
 			},
 		"no-extra-semi": {
@@ -1276,7 +1277,7 @@
 			"optionString": ""
 			},
 		"no-prototype-builtins": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"no-redeclare": {
@@ -1352,7 +1353,7 @@
 			"optionString": ""
 			},
 		"no-template-curly-in-string": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"no-ternary": {
@@ -1656,7 +1657,7 @@
 			"optionString": ""
 			},
 		"valid-jsdoc": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
 			},
 		"valid-typeof": {
