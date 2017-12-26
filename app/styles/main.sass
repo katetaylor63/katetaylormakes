@@ -3,6 +3,7 @@
 @import layout-variables
 @import reset
 
+$nav-width: 18em
 
 // $blue: #7eb6bb
 // $gold: #db8c1b
@@ -24,11 +25,13 @@ html
   padding: 0
 
   .navigation
-    min-width: 18em
+    min-width: $nav-width
     background: $neutral
     border-right: .2em solid $neutral-dark
     ul
       padding: 0
+      position: fixed
+      width: $nav-width
       a
         @extend .nav-text
         text-decoration: none
@@ -45,6 +48,23 @@ html
 
   .container
     background: $neutral
+    display: flex
+    flex-direction: column
+
+    .cover-image-slider
+      display: block
+      img
+        max-width: 100%
+      .description
+        width: 300px
+        height: 100px
+        background: coral
+        z-index: 1000
+        position: relative
+        top: 4px
+        font-size: 1.4em
+
+
 
 // Navigation
 

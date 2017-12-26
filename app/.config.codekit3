@@ -22,6 +22,14 @@
 		"oAP": "\/build\/favicon.ico",
 		"oF": 0
 		},
+	"\/img\/bx_loader.gif": {
+		"ft": 4194304,
+		"iS": 8581,
+		"oA": 0,
+		"oAP": "\/build\/img\/bx_loader.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/carousel\/pic2.jpg": {
 		"ft": 16384,
 		"iS": 656020,
@@ -62,6 +70,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/img\/controls.png": {
+		"ft": 32768,
+		"iS": 2806,
+		"oA": 0,
+		"oAP": "\/build\/img\/controls.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/ktm-_GrayDecoration1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -98,12 +117,42 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/js\/aslider.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/aslider-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/interactivity.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/js\/interactivity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/jquery.bxslider.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/jquery.bxslider-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/jquery.easing.1.3.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/js\/jquery.easing.1.3-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -160,6 +209,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/styles\/jquery.bxslider.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/styles\/jquery.bxslider-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/styles\/layout-variables.sass": {
 		"aP": 0,
@@ -2258,7 +2317,7 @@
 			"flagValue": -1
 			},
 		"drop_console": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"drop_debugger": {
