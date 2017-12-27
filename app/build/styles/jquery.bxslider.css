@@ -92,7 +92,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px; }
 
-.p-all-md, .style-main-container .navigation ul a li, .main-container .navigation ul a li {
+.p-all-md, .style-main-container .navigation ul a li, .main-container .navigation ul a li, .style-main-container .container .intro, .main-container .container .intro, .style-main-container .container .grouping, .main-container .container .grouping {
   padding: 18px; }
 
 .p-left-md {
@@ -375,6 +375,11 @@ html {
         position: relative;
         top: 4px;
         font-size: 1.4em; }
+    .style-main-container .container .intro, .main-container .container .intro {
+      width: 100%;
+      background-color: #e1693b; }
+      .style-main-container .container .intro h1, .style-main-container .container .intro h2, .main-container .container .intro h1, .main-container .container .intro h2 {
+        color: #ede8e3; }
 
 #return {
   border-bottom: 0.1em solid #e5ded7;
