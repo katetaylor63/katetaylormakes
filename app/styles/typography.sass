@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500')
 
 $font: 'Montserrat', sans-serif
 
@@ -10,6 +10,7 @@ h1
   font-size: 3em
   letter-spacing: .1em
   line-height: 1.6em
+  font-weight: 400
 
 
 h2
@@ -17,21 +18,24 @@ h2
   font-size: 1.8em
   line-height: 3em
   letter-spacing: .04em
+  font-weight: 400
 
 h3
   color: $text
   font-size: 1.5em
   letter-spacing: .04em
   line-height: 1.8em
+  font-weight: 400
 
 p
   color: $text
+  font-weight: 400
   font-size: 1.4em
   letter-spacing: .05em
   line-height: 1.8em
 
 .bold
-  font-weight: 400
+  font-weight: 500
 
 .pop
   color: $orange
@@ -42,10 +46,25 @@ p
 .lighter
   color: $text-lighter
 
+
+.caption
+  font-size: 1.2em
+  color: $text
+  letter-spacing: .03em
+
 .date
-  font-weight: 300
-  font-style: italic
+  font-weight: 400
+  font-size: 1.3em
+  color: $text-lighter
 
 .nav-text
   font-size: 1.3em
   letter-spacing: .04em
+
+.question
+  @extend .pop
+  @extend .bold
+
+.answer
+  @extend .p-left-md
+  @extend .p-bottom-md

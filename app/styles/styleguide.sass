@@ -1,0 +1,92 @@
+@import main
+
+.code
+  background-color: $blue
+  @extend .p-all-sm
+  color: $blue-dark
+  font-size: 1.3em
+  line-height: 1.6em
+  font-family: monospace
+  border-radius: $border-radius
+  @extend .m-top-bottom-sm
+  max-width: 45em
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  .caption
+    font-family: $font !important
+    color: $neutral
+    letter-spacing: .08em
+    @extend .m-bottom-xs
+  .column
+    // flex: 1
+
+
+
+.intro
+  width: 100%
+  @extend .p-all-md
+  background-color: $blue
+  h1
+    color: $neutral
+.grouping
+  @extend .p-all-md
+
+
+.color-swatch-group
+  display: flex
+  .color-swatch
+    display: flex
+    @extend .m-right-sm
+    @extend .m-top-bottom-sm
+    flex-direction: column
+    border: $border
+    width: 20em
+    .color
+      height: 3em
+      width: 100%
+    .text
+      border-top: $border
+      @extend .caption
+      @extend .p-all-xs
+      background-color: $neutral-light
+
+.typography-section
+  display: flex
+  @extend .m-bottom-md
+  flex-direction: column
+  &:last-of-type
+    margin-bottom: 0
+  .typography-row
+    display: flex
+    flex-direction: row
+    border-bottom: $border
+    @extend .p-all-xs
+    &:last-of-type
+      border-bottom: none
+    .label
+      @extend .caption
+      align-self: baseline
+      min-width: 10em
+    .example
+      align-self: baseline
+
+
+.graphics-section
+  .graphics-row
+    display: flex
+    .group
+      display: flex
+      @extend .m-right-md
+      &:last-of-type
+        margin-right: 0
+      .item
+        flex: 1
+// Navigation
+#return
+  border-bottom: $border
+  background: $neutral-dark
+  &:hover
+    background: $neutral-darker
+    border-left: none
+    padding-left: 1.4em

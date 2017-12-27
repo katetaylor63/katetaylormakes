@@ -3,7 +3,17 @@
 @import layout-variables
 @import reset
 
+// Used for writing notes in the markup - visible on the page
+.note
+  color: white
+  font-family: sans-serif
+  background: crimson
+  padding: .5em
+
 $nav-width: 18em
+
+$border: 1px solid $neutral-dark
+$border-radius: .8em
 
 // $blue: #7eb6bb
 // $gold: #db8c1b
@@ -25,11 +35,13 @@ html
   .navigation
     min-width: $nav-width
     background: $neutral
-    border-right: .2em solid $neutral-dark
+
     ul
       padding: 0
       position: fixed
       width: $nav-width
+      border-right: $border
+      height: 100%
       a
         @extend .nav-text
         text-decoration: none
@@ -62,25 +74,3 @@ html
         position: relative
         top: 4px
         font-size: 1.4em
-
-    .intro
-      width: 100%
-      @extend .p-all-md
-      background-color: $orange
-      h1, h2
-        color: $neutral
-    .grouping
-      @extend .p-all-md
-
-
-
-
-// Navigation
-
-#return
-  border-bottom: .1em solid $neutral-dark
-  background: $neutral-dark
-  &:hover
-    background: $neutral-darker
-    border-left: none
-    padding-left: 1.4em

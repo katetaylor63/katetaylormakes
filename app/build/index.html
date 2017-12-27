@@ -5,48 +5,256 @@
     <title>Styling | Kate Taylor</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link href="/styles/jquery.bxslider.css" rel="stylesheet">
+    <link href="/styles/styleguide.css" rel="stylesheet">
     <body class="style-main-container">
       <div class="navigation">
         <ul class="fixed"><a href="main.html"> 
             <li id="return"> Return to main site</li></a><a href="#reason">
-            <li> Reason</li></a><a href="#colors">
+            <li> Reason</li></a><a href="#graphics">
+            <li> Graphics</li></a><a href="#colors">
             <li> Color variables</li></a><a href="#typography">
-            <li> Typography Classes</li></a><a href="#layout-helpers">
+            <li> Typography Classes</li></a><a href="#layout">
             <li> Layout Helpers</li></a><a href="#page-structure">
             <li> Page Structure</li></a></ul>
       </div>
       <div class="container">
         <div class="intro">
           <h1>Kate Taylor Portfolio Site</h1>
-          <h2>Styling and Development Documentation</h2>
+          <h2 class="navy-text">Styling and Development Documentation</h2>
         </div>
         <div class="grouping">
-          <h2> Reason</h2>
-          <h3> What is the purpose of this site?</h3>
-          <h3> Who is the target audience?</h3>
-          <h3> What are they looking for?</h3>
-          <h3> How does this meet their needs?</h3>
+          <h2 id="reason"> Reason</h2>
+          <h3 class="question"> What is the purpose of this site?</h3>
+          <p class="answer"> To maintain a library of my work, have a record of past work. To send out to potential employers in the future. Practice Web Development (Personal Development)</p>
+          <h3 class="question"> Who is the target audience?</h3>
+          <p class="answer"> Potential employers, contractors, personal use</p>
+          <h3 class="question"> What are they looking for?</h3>
+          <p class="answer"> They are looking for a graphic artist with a diverse skill set. </p>
         </div>
         <div class="grouping">
-          <h2> Color Variables</h2>
-          <p>Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. </p>
+          <h2 id="graphics">Graphics</h2>
+          <div class="graphics-section">
+            <div class="graphics-row">
+              <h3> Logos
+                <div class="group">
+                  <div class="item"><img width="300px" src="/img/ktm-logo.svg"></div>
+                  <div class="item">
+                    <div class="note">Need vertical logo - for side navigation</div>
+                  </div>
+                </div>
+              </h3>
+            </div>
+            <div class="graphics-row">
+              <h3> Decorations
+                <div class="group">
+                  <div class="item"><img width="30px" src="/img/ktm-_GrayDecoration1.svg"></div>
+                  <div class="item">
+                    <div class="note">Put illustrations and animations in here too</div>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
         </div>
         <div class="grouping">
-          <h2> Typography</h2>
-          <p>Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. </p>
+          <h2 id="color">Color Variables</h2>
+          <div class="color-swatch-group">
+            <div class="color-swatch">
+              <div class="color blue-bg"></div>
+              <div class="text">$blue</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color blue-dark-bg"></div>
+              <div class="text">$blue-dark</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color blue-light-bg"></div>
+              <div class="text">$blue-light</div>
+            </div>
+          </div>
+          <div class="color-swatch-group">
+            <div class="color-swatch">
+              <div class="color gold-bg"></div>
+              <div class="text">$gold</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color gold-dark-bg"></div>
+              <div class="text">$gold-dark</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color gold-light-bg"></div>
+              <div class="text">$gold-light</div>
+            </div>
+          </div>
+          <div class="color-swatch-group">
+            <div class="color-swatch">
+              <div class="color orange-bg"></div>
+              <div class="text">$orange</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color orange-dark-bg"></div>
+              <div class="text">$orange-dark</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color orange-light-bg"></div>
+              <div class="text">$orange-light</div>
+            </div>
+          </div>
+          <div class="color-swatch-group">
+            <div class="color-swatch">
+              <div class="color navy-bg"></div>
+              <div class="text">$navy</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color navy-dark-bg"></div>
+              <div class="text">$navy-dark</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color navy-light-bg"></div>
+              <div class="text">$navy-light</div>
+            </div>
+          </div>
+          <div class="color-swatch-group">
+            <div class="color-swatch">
+              <div class="color neutral-bg"></div>
+              <div class="text">$neutral</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color neutral-darker-bg"></div>
+              <div class="text">$neutral-darker</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color neutral-dark-bg"></div>
+              <div class="text">$neutral-dark</div>
+            </div>
+          </div>
+          <div class="color-swatch-group">
+            <div class="color-swatch">
+              <div class="color text-bg"></div>
+              <div class="text">$text</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color text-light-bg"></div>
+              <div class="text">$text-light</div>
+            </div>
+            <div class="color-swatch">
+              <div class="color text-lighter-bg"></div>
+              <div class="text">$text-lighter</div>
+            </div>
+          </div>
         </div>
         <div class="grouping">
-          <h2> Layout</h2>
-          <p>Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. </p>
+          <h2 id="typography"> Typography</h2>
+          <div class="typography-section">
+            <div class="typography-row">
+              <div class="label"> h1</div>
+              <div class="example">
+                <h1> Astonishment brain</h1>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label"> h2</div>
+              <div class="example">
+                <h2> Astonishment brain is the seed of intelligence</h2>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label"> h3</div>
+              <div class="example">
+                <h3> Astonishment brain is the seed of intelligence</h3>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label">p</div>
+              <div class="example">
+                <p>Astonishment brain is the seed of intelligence rogue intelligent beings gathered by gravity light years the only home we've ever known Apollonius of Perga? Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. Vastness is bearable only through love billions upon billions, culture rogue ship of the imagination. Quasar Euclid. Prime number! Apollonius of Perga, rings of Uranus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="typography-section">
+            <div class="typography-row">
+              <div class="label"> p.caption</div>
+              <div class="example">
+                <p class="caption">Astonishment brain is the seed of intelligence</p>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label"> span.date</div>
+              <div class="example"><span class="date">October / 2017</span></div>
+            </div>
+          </div>
+          <div class="typography-section">
+            <div class="typography-row">
+              <div class="label"> .bold</div>
+              <div class="example">
+                <p class="bold">Astonishment brain is the seed of intelligence</p>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label"> .pop</div>
+              <div class="example">
+                <p class="pop">Astonishment brain is the seed of intelligence</p>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label"> .light</div>
+              <div class="example">
+                <p class="light">Astonishment brain is the seed of intelligence</p>
+              </div>
+            </div>
+            <div class="typography-row">
+              <div class="label"> .lighter</div>
+              <div class="example">
+                <p class="lighter">Astonishment brain is the seed of intelligence</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="grouping">
-          <h2> Page Structure</h2>
-          <p>Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. </p>
+          <h2 id="layout"> Layout</h2>
+          <h3> Helper Classes</h3>
+          <p>There are a series of classes built that will provide padding and margin values for all sides, individual, or pairings. The values are derived from calculations based on a single variable - that way the site's gutters can be scaled up or down easily and not break the layout.</p>
+          <div class="code">
+            <div class="column">
+              <div class="caption"> Variables</div>
+              <div>$base: (6)</div>
+              <div>$xs: $base * 1 + px</div>
+              <div>$sm: $base * 2 + px</div>
+              <div>$md: $base * 3 + px</div>
+              <div>$lg: $base * 4 + px</div>
+              <div>$xl: $base * 10 + px</div>
+              <div>$xxl: $base * 20 + px</div>
+            </div>
+            <div class="column">
+              <div>
+                <div class="caption"> Padding Classes</div>
+              </div>
+              <div>.p-all-sm</div>
+              <div>.p-top-sm</div>
+              <div>.p-right-sm</div>
+              <div>.p-bottom-sm</div>
+              <div>.p-left-sm</div>
+              <div>.p-top-bottom-sm</div>
+              <div>.p-left-right-sm</div>
+            </div>
+            <div class="column">
+              <div>
+                <div class="caption"> Margin Classes</div>
+              </div>
+              <div>.m-all-sm</div>
+              <div>.m-top-sm</div>
+              <div>.m-right-sm</div>
+              <div>.m-bottom-sm</div>
+              <div>.m-left-sm</div>
+              <div>.m-top-bottom-sm</div>
+              <div>.m-left-right-sm</div>
+            </div>
+          </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="/js/interactivity.js"></script>
+        <script src="/js/jquery.bxslider-min.js"></script>
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="/js/interactivity.js"></script>
-      <script src="/js/jquery.bxslider-min.js"></script>
     </body>
   </head>
 </html>

@@ -273,6 +273,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/styles\/styleguide.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/styles\/styleguide.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/styles\/typography.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -296,7 +309,7 @@
 	"displayValue": "app",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-punDog",
-	"lastBuiltDate": 536023304
+	"lastBuiltDate": 536104672
 	},
 "projectSettings": {
 	"abortBuildOnError": 0,

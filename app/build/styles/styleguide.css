@@ -99,7 +99,7 @@ p {
 .lighter {
   color: #aeacad; }
 
-.caption {
+.caption, .color-swatch-group .color-swatch .text, .typography-section .typography-row .label {
   font-size: 1.2em;
   color: #595959;
   letter-spacing: .03em; }
@@ -113,7 +113,7 @@ p {
   font-size: 1.3em;
   letter-spacing: .04em; }
 
-.p-all-xs {
+.p-all-xs, .color-swatch-group .color-swatch .text, .typography-section .typography-row {
   padding: 6px; }
 
 .p-left-xs {
@@ -136,7 +136,7 @@ p {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-.p-all-sm, .bx-wrapper .bx-caption span {
+.p-all-sm, .code {
   padding: 12px; }
 
 .p-left-sm {
@@ -159,7 +159,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px; }
 
-.p-all-md, .style-main-container .navigation ul a li, .main-container .navigation ul a li {
+.p-all-md, .style-main-container .navigation ul a li, .main-container .navigation ul a li, .intro, .grouping {
   padding: 18px; }
 
 .p-left-md, .answer {
@@ -267,7 +267,7 @@ p {
 .m-top-xs {
   margin-top: 6px; }
 
-.m-bottom-xs {
+.m-bottom-xs, .code .caption, .code .color-swatch-group .color-swatch .text, .color-swatch-group .color-swatch .code .text, .code .typography-section .typography-row .label, .typography-section .typography-row .code .label {
   margin-bottom: 6px; }
 
 .m-top-bottom-xs {
@@ -280,7 +280,7 @@ p {
 .m-left-sm {
   margin-left: 12px; }
 
-.m-right-sm {
+.m-right-sm, .color-swatch-group .color-swatch {
   margin-right: 12px; }
 
 .m-left-right-sm {
@@ -293,7 +293,7 @@ p {
 .m-bottom-sm {
   margin-bottom: 12px; }
 
-.m-top-bottom-sm {
+.m-top-bottom-sm, .code, .color-swatch-group .color-swatch {
   margin-top: 12px;
   margin-bottom: 12px; }
 
@@ -303,7 +303,7 @@ p {
 .m-left-md {
   margin-left: 18px; }
 
-.m-right-md {
+.m-right-md, .graphics-section .graphics-row .group {
   margin-right: 18px; }
 
 .m-left-right-md {
@@ -313,7 +313,7 @@ p {
 .m-top-md {
   margin-top: 18px; }
 
-.m-bottom-md {
+.m-bottom-md, .typography-section {
   margin-bottom: 18px; }
 
 .m-top-bottom-md {
@@ -450,142 +450,72 @@ html {
         top: 4px;
         font-size: 1.4em; }
 
-.bx-wrapper {
-  position: relative;
-  margin-bottom: 60px;
-  padding: 0;
-  *zoom: 1;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y; }
-  .bx-wrapper img {
-    max-width: 100%;
-    display: block; }
+.code {
+  background-color: #7eb6bb;
+  color: #2e5558;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  font-family: monospace;
+  border-radius: 0.8em;
+  max-width: 45em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .code .caption, .code .color-swatch-group .color-swatch .text, .color-swatch-group .color-swatch .code .text, .code .typography-section .typography-row .label, .typography-section .typography-row .code .label {
+    font-family: "Montserrat", sans-serif !important;
+    color: #ede8e3;
+    letter-spacing: .08em; }
 
-.bxslider {
-  margin: 0;
-  padding: 0; }
+.intro {
+  width: 100%;
+  background-color: #7eb6bb; }
+  .intro h1 {
+    color: #ede8e3; }
 
-ul.bxslider {
-  list-style: none; }
+.color-swatch-group {
+  display: flex; }
+  .color-swatch-group .color-swatch {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5ded7;
+    width: 20em; }
+    .color-swatch-group .color-swatch .color {
+      height: 3em;
+      width: 100%; }
+    .color-swatch-group .color-swatch .text {
+      border-top: 1px solid #e5ded7;
+      background-color: white; }
 
-.bx-viewport {
-  /*fix other elements on the page moving (on Chrome) */
-  -webkit-transform: translatez(0); }
+.typography-section {
+  display: flex;
+  flex-direction: column; }
+  .typography-section:last-of-type {
+    margin-bottom: 0; }
+  .typography-section .typography-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e5ded7; }
+    .typography-section .typography-row:last-of-type {
+      border-bottom: none; }
+    .typography-section .typography-row .label {
+      align-self: baseline;
+      min-width: 10em; }
+    .typography-section .typography-row .example {
+      align-self: baseline; }
 
-/** THEME
- *=================================== */
-.bx-wrapper {
-  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
-  box-shadow: 0 0 5px #ccc;
-  border: 5px solid #fff;
-  background: #fff; }
-  .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-    position: absolute;
-    bottom: -30px;
-    width: 100%; }
-  .bx-wrapper .bx-loading {
-    min-height: 50px;
-    background: url("images/bx_loader.gif") center center no-repeat #ffffff;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2000; }
-  .bx-wrapper .bx-pager {
-    text-align: center;
-    font-size: .85em;
-    font-family: Arial;
-    font-weight: bold;
-    color: #666;
-    padding-top: 20px; }
-    .bx-wrapper .bx-pager.bx-default-pager a {
-      background: #666;
-      text-indent: -9999px;
-      display: block;
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      outline: 0;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px; }
-      .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
-        background: #000; }
-  .bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-    display: inline-block;
-    vertical-align: bottom;
-    *zoom: 1;
-    *display: inline; }
-  .bx-wrapper .bx-pager-item {
-    font-size: 0;
-    line-height: 0; }
-  .bx-wrapper .bx-prev {
-    left: 10px;
-    background: url("images/controls.png") no-repeat 0 -32px; }
-    .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
-      background-position: 0 0; }
-  .bx-wrapper .bx-next {
-    right: 10px;
-    background: url("images/controls.png") no-repeat -43px -32px; }
-    .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
-      background-position: -43px 0; }
-  .bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 32px;
-    height: 32px;
-    text-indent: -9999px;
-    z-index: 9999; }
-    .bx-wrapper .bx-controls-direction a.disabled {
-      display: none; }
-  .bx-wrapper .bx-controls-auto {
-    text-align: center; }
-    .bx-wrapper .bx-controls-auto .bx-start {
-      display: block;
-      text-indent: -9999px;
-      width: 10px;
-      height: 11px;
-      outline: 0;
-      background: url("images/controls.png") -86px -11px no-repeat;
-      margin: 0 3px; }
-      .bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active, .bx-wrapper .bx-controls-auto .bx-start:focus {
-        background-position: -86px 0; }
-    .bx-wrapper .bx-controls-auto .bx-stop {
-      display: block;
-      text-indent: -9999px;
-      width: 9px;
-      height: 11px;
-      outline: 0;
-      background: url("images/controls.png") -86px -44px no-repeat;
-      margin: 0 3px; }
-      .bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active, .bx-wrapper .bx-controls-auto .bx-stop:focus {
-        background-position: -86px -33px; }
-  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-    text-align: left;
-    width: 80%; }
-  .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-    right: 0;
-    width: 35px; }
-  .bx-wrapper .bx-caption {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    background: #ede8e3;
-    opacity: .75;
-    width: max-content; }
-    .bx-wrapper .bx-caption span {
-      color: #595959;
-      font-family: "Montserrat", sans-serif;
-      display: block;
-      font-size: 1.2em; }
+.graphics-section .graphics-row {
+  display: flex; }
+  .graphics-section .graphics-row .group {
+    display: flex; }
+    .graphics-section .graphics-row .group:last-of-type {
+      margin-right: 0; }
+    .graphics-section .graphics-row .group .item {
+      flex: 1; }
 
-/* LOADER */
-/* PAGER */
-/* DIRECTION CONTROLS (NEXT / PREV) */
-/* AUTO CONTROLS (START / STOP) */
-/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-/* IMAGE CAPTIONS */
+#return {
+  border-bottom: 1px solid #e5ded7;
+  background: #e5ded7; }
+  #return:hover {
+    background: #d9cfc4;
+    border-left: none;
+    padding-left: 1.4em; }

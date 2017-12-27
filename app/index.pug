@@ -5,7 +5,7 @@ html
     title Styling | Kate Taylor
     link(rel='stylesheet', href='/styles/main.css')
     link(href="/styles/jquery.bxslider.css" rel="stylesheet")
-  
+    link(href="/styles/styleguide.css" rel="stylesheet")
 
       
     body.style-main-container
@@ -16,6 +16,9 @@ html
         
           a(href="#reason")
             li  Reason
+            
+          a(href="#graphics")
+            li  Graphics
         
           a(href="#colors")
             li  Color variables
@@ -23,7 +26,7 @@ html
           a(href="#typography")
             li  Typography Classes
         
-          a(href="#layout-helpers")
+          a(href="#layout")
             li  Layout Helpers
         
           a(href="#page-structure")
@@ -33,27 +36,181 @@ html
       .container
         .intro
           h1 Kate Taylor Portfolio Site
-          h2 Styling and Development Documentation
+          h2.navy-text Styling and Development Documentation
         .grouping
-          h2  Reason
-          h3  What is the purpose of this site?
-          h3  Who is the target audience?
-          h3  What are they looking for?
-          h3  How does this meet their needs?
+          h2#reason  Reason
+          h3.question  What is the purpose of this site?
+          p.answer  To maintain a library of my work, have a record of past work. To send out to potential employers in the future. Practice Web Development (Personal Development)
+          h3.question  Who is the target audience?
+          p.answer  Potential employers, contractors, personal use
+          h3.question  What are they looking for?
+          p.answer  They are looking for a graphic artist with a diverse skill set. 
         
         .grouping
-          h2  Color Variables
-          p Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. 
+          h2#graphics Graphics
+          .graphics-section
+            .graphics-row
+              h3  Logos
+                .group
+                  .item
+                    img(width="300px" src="/img/ktm-logo.svg")
+                  .item
+                    .note Need vertical logo - for side navigation
+            .graphics-row
+              h3  Decorations
+                .group
+                  .item
+                    img(width="30px"  src="/img/ktm-_GrayDecoration1.svg")
+                  .item
+                    .note Put illustrations and animations in here too
         .grouping
-          h2  Typography
-          p Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. 
+          h2#color Color Variables
+          .color-swatch-group
+            .color-swatch
+              .color.blue-bg
+              .text $blue
+            .color-swatch
+              .color.blue-dark-bg
+              .text $blue-dark
+            .color-swatch
+              .color.blue-light-bg
+              .text $blue-light
+          .color-swatch-group
+            .color-swatch
+              .color.gold-bg
+              .text $gold
+            .color-swatch
+              .color.gold-dark-bg
+              .text $gold-dark
+            .color-swatch
+              .color.gold-light-bg
+              .text $gold-light
+          .color-swatch-group
+            .color-swatch
+              .color.orange-bg
+              .text $orange
+            .color-swatch
+              .color.orange-dark-bg
+              .text $orange-dark
+            .color-swatch
+              .color.orange-light-bg
+              .text $orange-light
+          .color-swatch-group
+            .color-swatch
+              .color.navy-bg
+              .text $navy
+            .color-swatch
+              .color.navy-dark-bg
+              .text $navy-dark
+            .color-swatch
+              .color.navy-light-bg
+              .text $navy-light
+          .color-swatch-group
+            .color-swatch
+              .color.neutral-bg
+              .text $neutral
+            .color-swatch
+              .color.neutral-darker-bg
+              .text $neutral-darker
+            .color-swatch
+              .color.neutral-dark-bg
+              .text $neutral-dark
+          .color-swatch-group
+            .color-swatch
+              .color.text-bg
+              .text $text
+            .color-swatch
+              .color.text-light-bg
+              .text $text-light
+            .color-swatch
+              .color.text-lighter-bg
+              .text $text-lighter
+
         .grouping
-          h2  Layout
-          p Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. 
+          h2#typography  Typography
+          .typography-section
+            .typography-row
+              .label  h1
+              .example
+                h1  Astonishment brain
+            .typography-row
+              .label  h2
+              .example
+                h2  Astonishment brain is the seed of intelligence
+            .typography-row
+              .label  h3
+              .example
+                h3  Astonishment brain is the seed of intelligence
+            .typography-row
+              .label p
+              .example
+                p Astonishment brain is the seed of intelligence rogue intelligent beings gathered by gravity light years the only home we've ever known Apollonius of Perga? Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. Vastness is bearable only through love billions upon billions, culture rogue ship of the imagination. Quasar Euclid. Prime number! Apollonius of Perga, rings of Uranus.
+          
+          .typography-section
+            .typography-row
+              .label  p.caption
+              .example
+                p.caption Astonishment brain is the seed of intelligence
+            .typography-row
+              .label  span.date
+              .example
+                span.date October / 2017
+          
+          .typography-section
+            .typography-row
+              .label  .bold
+              .example
+                p.bold Astonishment brain is the seed of intelligence
+            .typography-row
+              .label  .pop
+              .example
+                p.pop Astonishment brain is the seed of intelligence
+            .typography-row
+              .label  .light
+              .example
+                p.light Astonishment brain is the seed of intelligence
+            .typography-row
+              .label  .lighter
+              .example
+                p.lighter Astonishment brain is the seed of intelligence
         .grouping
-          h2  Page Structure
-          p Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. 
+          h2#layout  Layout
+          h3  Helper Classes
+          p There are a series of classes built that will provide padding and margin values for all sides, individual, or pairings. The values are derived from calculations based on a single variable - that way the site's gutters can be scaled up or down easily and not break the layout.
+          .code
+            .column
+              div.caption  Variables
+              div $base: (6)
+              div $xs: $base * 1 + px
+              div $sm: $base * 2 + px
+              div $md: $base * 3 + px
+              div $lg: $base * 4 + px
+              div $xl: $base * 10 + px
+              div $xxl: $base * 20 + px
+            .column
+              div
+                .caption  Padding Classes
+              div .p-all-sm
+              div .p-top-sm
+              div .p-right-sm
+              div .p-bottom-sm
+              div .p-left-sm
+              div .p-top-bottom-sm
+              div .p-left-right-sm
+            .column
+              div
+                .caption  Margin Classes
+              div .m-all-sm
+              div .m-top-sm
+              div .m-right-sm
+              div .m-bottom-sm
+              div .m-left-sm
+              div .m-top-bottom-sm
+              div .m-left-right-sm
+        //- .grouping
+        //-   h2#page-structure  Page Structure
+        //-   p Stirred by starlight. Corpus callosum circumnavigated bits of moving fluff circumnavigated consciousness muse about something incredible is waiting to be known Jean-Francois Champollion circumnavigated kindling the energy hidden in matter venture! Gathered by gravity. 
         
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-      script(src='/js/interactivity.js')
-      script(src="/js/jquery.bxslider-min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+        script(src='/js/interactivity.js')
+        script(src="/js/jquery.bxslider-min.js")
