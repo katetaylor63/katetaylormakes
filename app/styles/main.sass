@@ -2,6 +2,7 @@
 @import typography
 @import layout-variables
 @import reset
+@import media-queries
 
 // Used for writing notes in the markup - visible on the page
 .note
@@ -10,7 +11,7 @@
   background: crimson
   padding: .5em
 
-$nav-width: 18em
+
 
 $border: 1px solid $neutral-dark
 $border-radius: .8em
@@ -22,7 +23,7 @@ $border-radius: .8em
 // $neutral: #ede8e3
 
 html
-  background: $neutral
+  // background: $neutral
 
 
 // The style page's main body container
@@ -32,29 +33,7 @@ html
   background: $orange
   padding: 0
 
-  .navigation
-    min-width: $nav-width
-    background: $neutral
 
-    ul
-      padding: 0
-      position: fixed
-      width: $nav-width
-      border-right: $border
-      height: 100%
-      a
-        @extend .nav-text
-        text-decoration: none
-        color: $text
-        &:hover
-          color: $orange-dark
-        li
-          list-style-type: none
-          @extend .p-all-md
-          padding-left: 1.4em
-          &:hover
-            border-left: .4em solid $orange
-            padding-left: 1em
 
   .container
     background: $neutral
@@ -74,3 +53,6 @@ html
         position: relative
         top: 4px
         font-size: 1.4em
+
+
+@import navigation

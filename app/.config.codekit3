@@ -254,8 +254,21 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/styles\/media-queries.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/styles\/navigation.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/styles\/navigation.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -309,7 +322,7 @@
 	"displayValue": "app",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-punDog",
-	"lastBuiltDate": 536104672
+	"lastBuiltDate": 536119665
 	},
 "projectSettings": {
 	"abortBuildOnError": 0,
