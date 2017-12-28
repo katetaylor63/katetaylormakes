@@ -134,7 +134,7 @@
 		"oA": 0,
 		"oAP": "\/build\/js\/interactivity-min.js",
 		"oF": 1,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/js\/jquery.bxslider.js": {
@@ -322,7 +322,7 @@
 	"displayValue": "app",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-punDog",
-	"lastBuiltDate": 536119665
+	"lastBuiltDate": 536128665
 	},
 "projectSettings": {
 	"abortBuildOnError": 0,

@@ -109,7 +109,7 @@ p {
   font-size: 1.3em;
   color: #aeacad; }
 
-.nav-text, .navigation ul a {
+.nav-text, .navigation #desktop-nav ul a {
   font-size: 1.3em;
   letter-spacing: .04em; }
 
@@ -159,7 +159,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px; }
 
-.p-all-md, .navigation ul a li, .intro, .grouping {
+.p-all-md, .navigation #desktop-nav ul a li, .intro, .grouping {
   padding: 18px; }
 
 .p-left-md, .answer {
@@ -398,26 +398,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   vertical-align: baseline; }
 
-@media (max-width: 420px) {
-  html {
-    background: coral; } }
-
-@media (min-width: 420px) and (max-width: 768px) {
-  html {
-    background: honeydew; } }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  html {
-    background: teal; } }
-
-@media (min-width: 1024px) and (max-width: 1800px) {
-  html {
-    background: green; } }
-
-@media (min-width: 1800px) and (max-width: 2560px) {
-  html {
-    background: aqua; } }
-
 .note {
   color: white;
   font-family: sans-serif;
@@ -426,8 +406,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .style-main-container, .main-container {
   display: flex;
-  height: 100vh;
-  background: #e1693b;
+  height: 100%;
+  background: #ede8e3;
   padding: 0; }
   .style-main-container .container, .main-container .container {
     background: #ede8e3;
@@ -448,25 +428,45 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         font-size: 1.4em; }
 
 .navigation {
-  min-width: 18em;
-  background: #ede8e3; }
-  .navigation ul {
+  min-width: 18em; }
+  .navigation #desktop-nav ul {
     padding: 0;
     position: fixed;
     width: 18em;
     border-right: 1px solid #e5ded7;
+    background: #ede8e3;
     height: 100%; }
-    .navigation ul a {
+    .navigation #desktop-nav ul a {
       text-decoration: none;
       color: #595959; }
-      .navigation ul a:hover {
+      .navigation #desktop-nav ul a:hover {
         color: #ca4e1f; }
-      .navigation ul a li {
+      .navigation #desktop-nav ul a li {
         list-style-type: none;
         padding-left: 1.4em; }
-        .navigation ul a li:hover {
+        .navigation #desktop-nav ul a li:hover {
           border-left: 0.4em solid #e1693b;
           padding-left: 1em; }
+
+@media (max-width: 420px) {
+  #desktop-nav {
+    display: none; } }
+
+@media (min-width: 420px) and (max-width: 768px) {
+  #desktop-nav {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #mobile-nav {
+    display: none; } }
+
+@media (min-width: 1024px) and (max-width: 1800px) {
+  #mobile-nav {
+    display: none; } }
+
+@media (min-width: 1800px) and (max-width: 2560px) {
+  #mobile-nav {
+    display: none; } }
 
 .code {
   background-color: #7eb6bb;

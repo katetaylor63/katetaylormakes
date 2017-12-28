@@ -2,24 +2,25 @@ $nav-width: 18em
 
 .navigation
   min-width: $nav-width
-  background: $neutral
 
-  ul
-    padding: 0
-    position: fixed
-    width: $nav-width
-    border-right: $border
-    height: 100%
-    a
-      @extend .nav-text
-      text-decoration: none
-      color: $text
-      &:hover
-        color: $orange-dark
-      li
-        list-style-type: none
-        @extend .p-all-md
-        padding-left: 1.4em
+  #desktop-nav
+    ul
+      padding: 0
+      position: fixed
+      width: $nav-width
+      border-right: $border
+      background: $neutral
+      height: 100%
+      a
+        @extend .nav-text
+        text-decoration: none
+        color: $text
         &:hover
-          border-left: .4em solid $orange
-          padding-left: 1em
+          color: $orange-dark
+        li
+          list-style-type: none
+          @extend .p-all-md
+          padding-left: 1.4em
+          &:hover
+            border-left: .4em solid $orange
+            padding-left: 1em
