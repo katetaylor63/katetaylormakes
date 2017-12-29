@@ -109,7 +109,7 @@ p {
   font-size: 1.3em;
   color: #aeacad; }
 
-.nav-text, .navigation #desktop-nav ul a, #mobile-nav-open ul a {
+.nav-text, #desktop-nav ul a, #mobile-nav-open .mobile-nav-container ul a {
   font-size: 1.3em;
   letter-spacing: .04em; }
 
@@ -159,7 +159,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px; }
 
-.p-all-md, .navigation #desktop-nav ul a li, #mobile-nav-open ul a li {
+.p-all-md, #desktop-nav ul a li {
   padding: 18px; }
 
 .p-left-md, .answer {
@@ -182,7 +182,7 @@ p {
   padding-top: 18px;
   padding-bottom: 18px; }
 
-.p-all-lg {
+.p-all-lg, #mobile-nav-open .mobile-nav-container ul a li {
   padding: 24px; }
 
 .p-left-lg {
@@ -429,43 +429,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .navigation {
   min-width: 18em; }
-  .navigation #desktop-nav ul {
-    padding: 0;
-    position: fixed;
-    width: 18em;
-    border-right: 1px solid #e5ded7;
-    background: #ede8e3;
-    height: 100%; }
-    .navigation #desktop-nav ul a {
-      text-decoration: none;
-      color: #595959; }
-      .navigation #desktop-nav ul a:hover {
-        color: #ca4e1f; }
-      .navigation #desktop-nav ul a li {
-        list-style-type: none;
-        padding-left: 1.4em; }
-        .navigation #desktop-nav ul a li:hover {
-          border-left: 0.4em solid #e1693b;
-          padding-left: 1em; }
 
-#mobile-nav-open ul {
+#desktop-nav ul {
   padding: 0;
   position: fixed;
   width: 18em;
-  border-left: 1px solid #e5ded7;
+  border-right: 1px solid #e5ded7;
   background: #ede8e3;
   height: 100%; }
-  #mobile-nav-open ul a {
+  #desktop-nav ul a {
     text-decoration: none;
     color: #595959; }
-    #mobile-nav-open ul a:hover {
+    #desktop-nav ul a:hover {
       color: #ca4e1f; }
-    #mobile-nav-open ul a li {
+    #desktop-nav ul a li {
       list-style-type: none;
       padding-left: 1.4em; }
-      #mobile-nav-open ul a li:hover {
+      #desktop-nav ul a li:hover {
         border-left: 0.4em solid #e1693b;
         padding-left: 1em; }
+
+#mobile-nav-open .mobile-nav-container {
+  background: rgba(0, 0, 0, 0.8); }
+  #mobile-nav-open .mobile-nav-container ul {
+    padding: 0;
+    position: fixed;
+    width: 26em;
+    background: #ede8e3;
+    height: 100%; }
+    #mobile-nav-open .mobile-nav-container ul a {
+      font-size: 140%;
+      text-decoration: none;
+      color: #595959; }
+      #mobile-nav-open .mobile-nav-container ul a li {
+        list-style-type: none;
+        padding-left: 1.4em; }
 
 @media (max-width: 420px) {
   #desktop-nav {
